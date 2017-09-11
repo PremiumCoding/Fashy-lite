@@ -14,4 +14,4 @@ We do ask, however, that if you are using the theme on a live site that you plea
 
 We cannot provide support to anyone that does not hold a valid license key.
 
-For other theme you can check our site https://premiumcoding.come
+For other theme you can check our site https://premiumcoding.com
