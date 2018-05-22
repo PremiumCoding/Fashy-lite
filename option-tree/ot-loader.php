@@ -321,20 +321,12 @@ if ( ! class_exists( 'OT_Loader' ) ) {
        *
        * @since     2.0
        */
-      if ( false == OT_THEME_MODE && false == OT_CHILD_THEME_MODE ) {
-        define( 'OT_DIR', plugin_dir_path( __FILE__ ) );
-        define( 'OT_URL', plugin_dir_url( __FILE__ ) );
-      } else {
-        if ( true == OT_CHILD_THEME_MODE ) {
-          $path = ltrim( end( @explode( get_stylesheet(), str_replace( '\\', '/', dirname( __FILE__ ) ) ) ), '/' );
-          define( 'OT_DIR', trailingslashit( trailingslashit( get_stylesheet_directory() ) . $path ) );
-          define( 'OT_URL', trailingslashit( trailingslashit( get_stylesheet_directory_uri() ) . $path ) );
-        } else {
-          $path = ltrim( end( @explode( get_template(), str_replace( '\\', '/', dirname( __FILE__ ) ) ) ), '/' );
-          define( 'OT_DIR', trailingslashit( trailingslashit( get_template_directory() ) . $path ) );
-          define( 'OT_URL', trailingslashit( trailingslashit( get_template_directory_uri() ) . $path ) );
-        }
-      }
+		
+	  $path = '/option-tree/';
+	  define( 'OT_DIR', trailingslashit( trailingslashit( get_template_directory() ) . $path ) );
+	  define( 'OT_URL', trailingslashit( trailingslashit( get_template_directory_uri() ) . $path ) );
+        
+      
       
       /**
        * Template directory URI for the current theme.

@@ -8,7 +8,7 @@ function fashy_category_select_post_widget() {
 	register_widget( 'fashy_category_select_posts' );
 }
 class fashy_category_select_posts extends WP_Widget {
-	function fashy_category_select_posts() {
+	function __construct() {
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'category_select_posts', 'description' => esc_attr__('Displays the post image and excerpt from a selected category','fashy') );
 		/* Create the widget. */

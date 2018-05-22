@@ -9,7 +9,7 @@ function fashy_category_select_slider_post_widget() {
 	register_widget( 'fashy_category_select_slider_posts' );
 }
 class fashy_category_select_slider_posts extends WP_Widget {
-	function fashy_category_select_slider_posts() {
+	function __construct() {
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'category_select_slider_posts', 'description' => esc_attr__('Displays the post in slider from a selected category','fashy') );
 		/* Create the widget. */

@@ -8,7 +8,7 @@ function fashy_video_widget() {
 	register_widget( 'fashy_videos' );
 }
 class fashy_videos extends WP_Widget {
-	function fashy_videos() {
+	function __construct() {
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'videos', 'description' => esc_attr__('Displays the post image and title.','fashy'));
 		/* Create the widget. */
